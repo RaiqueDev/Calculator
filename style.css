@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+}
+#title{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "consolas", sans-serif;
+    font-size: 60px;
+    background-color: #728AB7;
+    color: #4F4F4F;
+    
+}
+#titleH1{
+    cursor: pointer;
+}
+.calculator{
+    width: 306px;
+    height: 523px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #F0F0F3;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px #4F4F4F;
+}
+.monitor{
+    width: 305px;
+    height: 155px;
+    background-color: #161616;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.telaDigitos{
+    width: 143px;
+    height: 129.9px;
+    margin-right: 35px;
+}
+#sendValue{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #728AB7;
+}
+#returnValue{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #161616;
+    border: pointer;
+}
+table{
+    width: 280px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+tr{
+    width: 240px;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#BtnClean{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(116, 95, 242, 0.76);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#BtnClean:hover{
+    background-color: #816cfa;
+}
+#BtnExponentiation{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    cursor: pointer;
+}
+#BtnDivisionRemainder{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    cursor: pointer;
+}
+#BtnDivision{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #745FF2;
+    cursor: pointer;
+}
+#Btn7{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#Btn8{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#Btn9{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#BtnX{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    cursor: pointer;
+    color:rgba(116, 95, 242, 1);
+}
+#Btn4{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#Btn5{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#Btn6{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#BtnSubtraction{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color:rgba(116, 95, 242, 1);
+    cursor: pointer;
+}
+#Btn1{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#Btn2{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#Btn3{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#BtnAddition{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    cursor: pointer;
+    color:rgba(116, 95, 242, 1);
+}
+#Btn0{
+    width: 107px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+#BtnPonto{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBBBF2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+#BtnSomar{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(116, 95, 242, 0.76);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    cursor: pointer;
+}

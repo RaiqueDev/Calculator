@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1 onclick="titleH1()" id="titleH1">Calculator</h1>
+        </div>
+        <div id="container">
+            <div class="calculator">
+                <div class="monitor">
+                    <div class="telaDigitos">
+                        <div id="sendValue">
+                            
+                        </div>
+                        <div id="returnValue">
+                            
+                        </div>
+                    </div>
+                </div>
+                <span></span>
+                <table>
+                    <tr>
+                        <td><button onclick="clean('C')" id="BtnClean">C</button></td>
+                        <td><button onclick="insert('**')" id="BtnExponentiation">**</button></td>
+                        <td><button onclick="insert('%')" id="BtnDivisionRemainder">%</button></td>
+                        <td><button onclick="insert('/')" id="BtnDivision">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('7')" id="Btn7">7</button></td>
+                        <td><button onclick="insert('8')" id="Btn8">8</button></td>
+                        <td><button onclick="insert('9')" id="Btn9">9</button></td>
+                        <td><button onclick="insert('X')" id="BtnX">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('4')" id="Btn4">4</button></td>
+                        <td><button onclick="insert('5')" id="Btn5">5</button></td>
+                        <td><button onclick="insert('6')" id="Btn6">6</button></td>
+                        <td><button onclick="insert('-')" id="BtnSubtraction">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('1')" id="Btn1">1</button></td>
+                        <td><button onclick="insert('2')" id="Btn2">2</button></td>
+                        <td><button onclick="insert('3')" id="Btn3">3</button></td>
+                        <td><button onclick="insert('+')" id="BtnAddition">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('0')" id="Btn0">0</button></td>
+                        <td><button onclick="insert('.')" id="BtnPonto">.</button></td>
+                        <td><button onclick="Btncalculate()" id="BtnSomar">=</button></td>
+                    </div>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
